@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------------*/
+/* ish.h                                                              */
+/* Author: Jingran Zhou                                               */
+/*--------------------------------------------------------------------*/
+
+/* Return the value of the global variable pcPgmName, which means the 
+   name of the program. */
+
+const char* getPgmName();

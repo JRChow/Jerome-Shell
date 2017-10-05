@@ -1,0 +1,450 @@
+
+================================================================
+Running sampleish and ish with commands_demo
+================================================================
+
+% echo "*** EXECUTABLE BINARY COMMANDS"				% echo "*** EXECUTABLE BINARY COMMANDS"
+*** EXECUTABLE BINARY COMMANDS					*** EXECUTABLE BINARY COMMANDS
+% /bin/date							% /bin/date
+Thu May 11 22:55:24 EDT 2017				      |	Thu May 11 22:55:25 EDT 2017
+% date								% date
+Thu May 11 22:55:24 EDT 2017				      |	Thu May 11 22:55:25 EDT 2017
+% pwd								% pwd
+/u/jingranz/ishProj						/u/jingranz/ishProj
+% ls								% ls
+#clear#								#clear#
+#commands_demo#							#commands_demo#
+#dynarray.c#							#dynarray.c#
+#token.h#							#token.h#
+__temp								__temp
+command.c							command.c
+command.c~							command.c~
+command.h							command.h
+command.h~							command.h~
+command.o							command.o
+commands_demo							commands_demo
+commands_lex							commands_lex
+commands_syn							commands_syn
+dfa.c								dfa.c
+dynarray.c							dynarray.c
+dynarray.c~							dynarray.c~
+dynarray.h							dynarray.h
+dynarray.h~							dynarray.h~
+ish								ish
+ish.c								ish.c
+ish.c~								ish.c~
+ish.h								ish.h
+ish.h~								ish.h~
+ishlex								ishlex
+ishlex.c							ishlex.c
+ishlex.c~							ishlex.c~
+ishsyn								ishsyn
+ishsyn.c							ishsyn.c
+ishsyn.c~							ishsyn.c~
+lexAnalyzer.c							lexAnalyzer.c
+lexAnalyzer.c~							lexAnalyzer.c~
+lexAnalyzer.h							lexAnalyzer.h
+lexAnalyzer.h~							lexAnalyzer.h~
+lexAnalyzer.o							lexAnalyzer.o
+meminfo21832.out						meminfo21832.out
+meminfo22121.out						meminfo22121.out
+meminfo22147.out						meminfo22147.out
+meminfo22163.out						meminfo22163.out
+meminfo30130.out						meminfo30130.out
+mytemp.txt							mytemp.txt
+readme								readme
+sampleish							sampleish
+sampleishlex							sampleishlex
+sampleishsyn							sampleishsyn
+sampletemp.txt							sampletemp.txt
+synAnalyzer.c							synAnalyzer.c
+synAnalyzer.c~							synAnalyzer.c~
+synAnalyzer.h							synAnalyzer.h
+synAnalyzer.h~							synAnalyzer.h~
+synAnalyzer.o							synAnalyzer.o
+testish								testish
+testish.txt							testish.txt
+testishdiff							testishdiff
+testishlex							testishlex
+testishlexdiff							testishlexdiff
+testishsyn							testishsyn
+testishsyndiff							testishsyndiff
+token.c								token.c
+token.c~							token.c~
+token.h								token.h
+token.h.gch							token.h.gch
+token.h~							token.h~
+token.o								token.o
+% ls -al							% ls -al
+total 5788							total 5788
+-rw-------.  1 jingranz utempter       0 May  8 13:54 #clear#	-rw-------.  1 jingranz utempter       0 May  8 13:54 #clear#
+-rw-------.  1 jingranz utempter     701 May  8 15:23 #comman	-rw-------.  1 jingranz utempter     701 May  8 15:23 #comman
+-rw-------.  1 jingranz utempter   11222 May 10 16:37 #dynarr	-rw-------.  1 jingranz utempter   11222 May 10 16:37 #dynarr
+-rw-------.  1 jingranz utempter    1935 May 10 20:06 #token.	-rw-------.  1 jingranz utempter    1935 May 10 20:06 #token.
+drwx------.  3 jingranz utempter    1787 May 11 22:55 .		drwx------.  3 jingranz utempter    1787 May 11 22:55 .
+drwx--x--x. 14 jingranz utempter     628 May 11 22:46 ..      |	drwx--x--x. 14 jingranz utempter     628 May 11 22:55 ..
+drwx------.  2 jingranz utempter      65 May 11 22:55 __temp	drwx------.  2 jingranz utempter      65 May 11 22:55 __temp
+-rw-------.  1 jingranz utempter    5906 May 11 22:43 command	-rw-------.  1 jingranz utempter    5906 May 11 22:43 command
+-rw-------.  1 jingranz utempter    5893 May 11 22:42 command	-rw-------.  1 jingranz utempter    5893 May 11 22:42 command
+-rw-------.  1 jingranz utempter    1386 May 11 22:26 command	-rw-------.  1 jingranz utempter    1386 May 11 22:26 command
+-rw-------.  1 jingranz utempter    1386 May 11 22:03 command	-rw-------.  1 jingranz utempter    1386 May 11 22:03 command
+-rw-------.  1 jingranz utempter    5072 May 10 20:36 command	-rw-------.  1 jingranz utempter    5072 May 10 20:36 command
+-rw-------.  1 jingranz utempter     697 May  3 23:36 command	-rw-------.  1 jingranz utempter     697 May  3 23:36 command
+-rw-------.  1 jingranz utempter     218 May  3 23:36 command	-rw-------.  1 jingranz utempter     218 May  3 23:36 command
+-rw-------.  1 jingranz utempter     207 May  3 23:36 command	-rw-------.  1 jingranz utempter     207 May  3 23:36 command
+-rw-------.  1 jingranz utempter   10789 May  8 15:22 dfa.c	-rw-------.  1 jingranz utempter   10789 May  8 15:22 dfa.c
+-rw-------.  1 jingranz utempter   11222 May 11 17:06 dynarra	-rw-------.  1 jingranz utempter   11222 May 11 17:06 dynarra
+-rw-------.  1 jingranz utempter   11222 May  3 23:36 dynarra	-rw-------.  1 jingranz utempter   11222 May  3 23:36 dynarra
+-rw-------.  1 jingranz utempter    4865 May 10 19:22 dynarra	-rw-------.  1 jingranz utempter    4865 May 10 19:22 dynarra
+-rw-------.  1 jingranz utempter    4865 May  3 23:36 dynarra	-rw-------.  1 jingranz utempter    4865 May  3 23:36 dynarra
+-rwx------.  1 jingranz utempter   44848 May 11 22:43 ish	-rwx------.  1 jingranz utempter   44848 May 11 22:43 ish
+-rw-------.  1 jingranz utempter    3091 May 11 22:37 ish.c	-rw-------.  1 jingranz utempter    3091 May 11 22:37 ish.c
+-rw-------.  1 jingranz utempter    3082 May 11 22:37 ish.c~	-rw-------.  1 jingranz utempter    3082 May 11 22:37 ish.c~
+-rw-------.  1 jingranz utempter     469 May 10 20:07 ish.h	-rw-------.  1 jingranz utempter     469 May 10 20:07 ish.h
+-rw-------.  1 jingranz utempter     418 May  8 15:46 ish.h~	-rw-------.  1 jingranz utempter     418 May  8 15:46 ish.h~
+-rwx------.  1 jingranz utempter   40624 May 11 00:44 ishlex	-rwx------.  1 jingranz utempter   40624 May 11 00:44 ishlex
+-rw-------.  1 jingranz utempter    1558 May 11 00:06 ishlex.	-rw-------.  1 jingranz utempter    1558 May 11 00:06 ishlex.
+-rw-------.  1 jingranz utempter    1528 May 10 21:06 ishlex.	-rw-------.  1 jingranz utempter    1528 May 10 21:06 ishlex.
+-rwx------.  1 jingranz utempter   49400 May 11 22:35 ishsyn	-rwx------.  1 jingranz utempter   49400 May 11 22:35 ishsyn
+-rw-------.  1 jingranz utempter    2093 May 11 21:05 ishsyn.	-rw-------.  1 jingranz utempter    2093 May 11 21:05 ishsyn.
+-rw-------.  1 jingranz utempter    2093 May 11 17:29 ishsyn.	-rw-------.  1 jingranz utempter    2093 May 11 17:29 ishsyn.
+-rw-------.  1 jingranz utempter   11472 May 10 23:16 lexAnal	-rw-------.  1 jingranz utempter   11472 May 10 23:16 lexAnal
+-rw-------.  1 jingranz utempter   11512 May 10 23:14 lexAnal	-rw-------.  1 jingranz utempter   11512 May 10 23:14 lexAnal
+-rw-------.  1 jingranz utempter    1423 May 10 21:16 lexAnal	-rw-------.  1 jingranz utempter    1423 May 10 21:16 lexAnal
+-rw-------.  1 jingranz utempter    1401 May 10 20:08 lexAnal	-rw-------.  1 jingranz utempter    1401 May 10 20:08 lexAnal
+-rw-------.  1 jingranz utempter    8144 May  8 15:38 lexAnal	-rw-------.  1 jingranz utempter    8144 May  8 15:38 lexAnal
+-rw-------.  1 jingranz utempter   45194 May 11 17:48 meminfo	-rw-------.  1 jingranz utempter   45194 May 11 17:48 meminfo
+-rw-------.  1 jingranz utempter   46928 May 11 17:48 meminfo	-rw-------.  1 jingranz utempter   46928 May 11 17:48 meminfo
+-rw-------.  1 jingranz utempter   17739 May 11 17:48 meminfo	-rw-------.  1 jingranz utempter   17739 May 11 17:48 meminfo
+-rw-------.  1 jingranz utempter   13657 May 11 17:48 meminfo	-rw-------.  1 jingranz utempter   13657 May 11 17:48 meminfo
+-rw-------.  1 jingranz utempter     500 May 11 22:36 meminfo	-rw-------.  1 jingranz utempter     500 May 11 22:36 meminfo
+-rw-------.  1 jingranz utempter    1125 May  8 19:58 mytemp.	-rw-------.  1 jingranz utempter    1125 May  8 19:58 mytemp.
+-rw-------.  1 jingranz utempter    2221 May  3 23:36 readme	-rw-------.  1 jingranz utempter    2221 May  3 23:36 readme
+-rwx------.  1 jingranz utempter   30560 May  3 23:36 samplei	-rwx------.  1 jingranz utempter   30560 May  3 23:36 samplei
+-rwx------.  1 jingranz utempter   24168 May  3 23:36 samplei	-rwx------.  1 jingranz utempter   24168 May  3 23:36 samplei
+-rwx------.  1 jingranz utempter   30176 May  3 23:36 samplei	-rwx------.  1 jingranz utempter   30176 May  3 23:36 samplei
+-rw-------.  1 jingranz utempter    1125 May  8 19:57 samplet	-rw-------.  1 jingranz utempter    1125 May  8 19:57 samplet
+-rw-------.  1 jingranz utempter    4540 May 11 20:44 synAnal	-rw-------.  1 jingranz utempter    4540 May 11 20:44 synAnal
+-rw-------.  1 jingranz utempter    4388 May 11 17:46 synAnal	-rw-------.  1 jingranz utempter    4388 May 11 17:46 synAnal
+-rw-------.  1 jingranz utempter     865 May 10 20:37 synAnal	-rw-------.  1 jingranz utempter     865 May 10 20:37 synAnal
+-rw-------.  1 jingranz utempter     821 May 10 20:10 synAnal	-rw-------.  1 jingranz utempter     821 May 10 20:10 synAnal
+-rw-------.  1 jingranz utempter    6832 May 10 20:59 synAnal	-rw-------.  1 jingranz utempter    6832 May 10 20:59 synAnal
+-rwx------.  1 jingranz utempter    1318 May  3 23:36 testish	-rwx------.  1 jingranz utempter    1318 May  3 23:36 testish
+-rw-------.  1 jingranz utempter     177 May 11 22:55 testish	-rw-------.  1 jingranz utempter     177 May 11 22:55 testish
+-rwx------.  1 jingranz utempter    2465 May  3 23:36 testish	-rwx------.  1 jingranz utempter    2465 May  3 23:36 testish
+-rwx------.  1 jingranz utempter    1342 May  3 23:36 testish	-rwx------.  1 jingranz utempter    1342 May  3 23:36 testish
+-rwx------.  1 jingranz utempter    2504 May  3 23:36 testish	-rwx------.  1 jingranz utempter    2504 May  3 23:36 testish
+-rwx------.  1 jingranz utempter    1342 May  3 23:36 testish	-rwx------.  1 jingranz utempter    1342 May  3 23:36 testish
+-rwx------.  1 jingranz utempter    2504 May  3 23:36 testish	-rwx------.  1 jingranz utempter    2504 May  3 23:36 testish
+-rw-------.  1 jingranz utempter    4042 May 11 16:07 token.c	-rw-------.  1 jingranz utempter    4042 May 11 16:07 token.c
+-rw-------.  1 jingranz utempter    4040 May 11 01:07 token.c	-rw-------.  1 jingranz utempter    4040 May 11 01:07 token.c
+-rw-------.  1 jingranz utempter    1935 May 10 18:18 token.h	-rw-------.  1 jingranz utempter    1935 May 10 18:18 token.h
+-rw-------.  1 jingranz utempter 1507760 May  8 14:34 token.h	-rw-------.  1 jingranz utempter 1507760 May  8 14:34 token.h
+-rw-------.  1 jingranz utempter    1591 May 10 15:54 token.h	-rw-------.  1 jingranz utempter    1591 May 10 15:54 token.h
+-rw-------.  1 jingranz utempter    1288 May  8 14:34 token.o	-rw-------.  1 jingranz utempter    1288 May  8 14:34 token.o
+% echo								% echo
+
+% echo one two three						% echo one two three
+one two three							one two three
+% echo one "two   three" four					% echo one "two   three" four
+one two   three four						one two   three four
+% printenv							% printenv
+MANPATH=/usr/share/man:/u/cos217/man				MANPATH=/usr/share/man:/u/cos217/man
+UNAME_VERSION=#1						UNAME_VERSION=#1
+UNAME_OS=Linux							UNAME_OS=Linux
+XDG_SESSION_ID=22453						XDG_SESSION_ID=22453
+HOSTNAME=courselab02.cs.princeton.edu				HOSTNAME=courselab02.cs.princeton.edu
+SELINUX_ROLE_REQUESTED=						SELINUX_ROLE_REQUESTED=
+TERM=xterm-color						TERM=xterm-color
+SHELL=/bin/bash							SHELL=/bin/bash
+HISTSIZE=1000							HISTSIZE=1000
+SSH_CLIENT=128.112.165.245 59660 22				SSH_CLIENT=128.112.165.245 59660 22
+SELINUX_USE_CURRENT_RANGE=					SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/15						SSH_TTY=/dev/pts/15
+LC_ALL=C							LC_ALL=C
+QT_GRAPHICSSYSTEM_CHECKED=1					QT_GRAPHICSSYSTEM_CHECKED=1
+USER=jingranz							USER=jingranz
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5	LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5
+UNAME_HWCLASS=x86_64						UNAME_HWCLASS=x86_64
+LIBGL_ALWAYS_INDIRECT=true					LIBGL_ALWAYS_INDIRECT=true
+MAIL=/var/spool/mail/jingranz					MAIL=/var/spool/mail/jingranz
+PATH=/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/	PATH=/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/
+CPUTYPE=x86_64							CPUTYPE=x86_64
+_=./__temp/pgm							_=./__temp/pgm
+PWD=/u/jingranz/ishProj						PWD=/u/jingranz/ishProj
+GOARCH=amd64							GOARCH=amd64
+LANG=en_US.UTF-8						LANG=en_US.UTF-8
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/u	MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/u
+LOADEDMODULES=							LOADEDMODULES=
+SELINUX_LEVEL_REQUESTED=					SELINUX_LEVEL_REQUESTED=
+UNAME_NODE=courselab02.cs.princeton.edu				UNAME_NODE=courselab02.cs.princeton.edu
+HISTCONTROL=ignoredups						HISTCONTROL=ignoredups
+SHLVL=3								SHLVL=3
+HOME=/u/jingranz						HOME=/u/jingranz
+UNAME_RELEASE=3.10.0-514.2.2.el7.x86_64				UNAME_RELEASE=3.10.0-514.2.2.el7.x86_64
+GOROOT=/usr/lib/golang						GOROOT=/usr/lib/golang
+UNAME_ARCH=x86_64						UNAME_ARCH=x86_64
+GOOS=linux							GOOS=linux
+LOGNAME=jingranz						LOGNAME=jingranz
+CVS_RSH=ssh							CVS_RSH=ssh
+SSH_CONNECTION=128.112.165.245 59660 128.112.155.151 22		SSH_CONNECTION=128.112.165.245 59660 128.112.155.151 22
+MODULESHOME=/usr/share/Modules					MODULESHOME=/usr/share/Modules
+LESSOPEN=||/usr/bin/lesspipe.sh %s				LESSOPEN=||/usr/bin/lesspipe.sh %s
+XDG_RUNTIME_DIR=/run/user/120599				XDG_RUNTIME_DIR=/run/user/120599
+HISTTIMEFORMAT=%F %T 						HISTTIMEFORMAT=%F %T 
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`	BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}								}
+% printenv PATH							% printenv PATH
+/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/bin:/	/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/bin:/
+% printenv HOME							% printenv HOME
+/u/jingranz							/u/jingranz
+% 								% 
+% echo "*** SHELL BUILTIN COMMANDS (cd, setenv, unsetenv)"	% echo "*** SHELL BUILTIN COMMANDS (cd, setenv, unsetenv)"
+*** SHELL BUILTIN COMMANDS (cd, setenv, unsetenv)		*** SHELL BUILTIN COMMANDS (cd, setenv, unsetenv)
+% cd /usr							% cd /usr
+% pwd								% pwd
+/usr							      |	/u/jingranz/ishProj
+% cd bin							% cd bin
+							      >	/usr/bin/cd: line 2: cd: bin: No such file or directory
+% pwd								% pwd
+/usr/bin						      |	/u/jingranz/ishProj
+% cd								% cd
+% pwd								% pwd
+/u/jingranz						      |	/u/jingranz/ishProj
+% setenv XXX 123						% setenv XXX 123
+							      >	execvp failed.
+% printenv							% printenv
+MANPATH=/usr/share/man:/u/cos217/man				MANPATH=/usr/share/man:/u/cos217/man
+UNAME_VERSION=#1						UNAME_VERSION=#1
+UNAME_OS=Linux							UNAME_OS=Linux
+XDG_SESSION_ID=22453						XDG_SESSION_ID=22453
+HOSTNAME=courselab02.cs.princeton.edu				HOSTNAME=courselab02.cs.princeton.edu
+SELINUX_ROLE_REQUESTED=						SELINUX_ROLE_REQUESTED=
+TERM=xterm-color						TERM=xterm-color
+SHELL=/bin/bash							SHELL=/bin/bash
+HISTSIZE=1000							HISTSIZE=1000
+SSH_CLIENT=128.112.165.245 59660 22				SSH_CLIENT=128.112.165.245 59660 22
+SELINUX_USE_CURRENT_RANGE=					SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/15						SSH_TTY=/dev/pts/15
+LC_ALL=C							LC_ALL=C
+QT_GRAPHICSSYSTEM_CHECKED=1					QT_GRAPHICSSYSTEM_CHECKED=1
+USER=jingranz							USER=jingranz
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5	LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5
+UNAME_HWCLASS=x86_64						UNAME_HWCLASS=x86_64
+LIBGL_ALWAYS_INDIRECT=true					LIBGL_ALWAYS_INDIRECT=true
+MAIL=/var/spool/mail/jingranz					MAIL=/var/spool/mail/jingranz
+PATH=/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/	PATH=/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/
+CPUTYPE=x86_64							CPUTYPE=x86_64
+_=./__temp/pgm							_=./__temp/pgm
+PWD=/u/jingranz/ishProj						PWD=/u/jingranz/ishProj
+GOARCH=amd64							GOARCH=amd64
+LANG=en_US.UTF-8						LANG=en_US.UTF-8
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/u	MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/u
+LOADEDMODULES=							LOADEDMODULES=
+SELINUX_LEVEL_REQUESTED=					SELINUX_LEVEL_REQUESTED=
+UNAME_NODE=courselab02.cs.princeton.edu				UNAME_NODE=courselab02.cs.princeton.edu
+HISTCONTROL=ignoredups						HISTCONTROL=ignoredups
+SHLVL=3								SHLVL=3
+HOME=/u/jingranz						HOME=/u/jingranz
+UNAME_RELEASE=3.10.0-514.2.2.el7.x86_64				UNAME_RELEASE=3.10.0-514.2.2.el7.x86_64
+GOROOT=/usr/lib/golang						GOROOT=/usr/lib/golang
+UNAME_ARCH=x86_64						UNAME_ARCH=x86_64
+GOOS=linux							GOOS=linux
+LOGNAME=jingranz						LOGNAME=jingranz
+CVS_RSH=ssh							CVS_RSH=ssh
+SSH_CONNECTION=128.112.165.245 59660 128.112.155.151 22		SSH_CONNECTION=128.112.165.245 59660 128.112.155.151 22
+MODULESHOME=/usr/share/Modules					MODULESHOME=/usr/share/Modules
+LESSOPEN=||/usr/bin/lesspipe.sh %s				LESSOPEN=||/usr/bin/lesspipe.sh %s
+XDG_RUNTIME_DIR=/run/user/120599				XDG_RUNTIME_DIR=/run/user/120599
+HISTTIMEFORMAT=%F %T 						HISTTIMEFORMAT=%F %T 
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`	BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}								}
+XXX=123							      <
+% printenv XXX							% printenv XXX
+123							      <
+% unsetenv XXX							% unsetenv XXX
+							      >	execvp failed.
+% printenv							% printenv
+MANPATH=/usr/share/man:/u/cos217/man				MANPATH=/usr/share/man:/u/cos217/man
+UNAME_VERSION=#1						UNAME_VERSION=#1
+UNAME_OS=Linux							UNAME_OS=Linux
+XDG_SESSION_ID=22453						XDG_SESSION_ID=22453
+HOSTNAME=courselab02.cs.princeton.edu				HOSTNAME=courselab02.cs.princeton.edu
+SELINUX_ROLE_REQUESTED=						SELINUX_ROLE_REQUESTED=
+TERM=xterm-color						TERM=xterm-color
+SHELL=/bin/bash							SHELL=/bin/bash
+HISTSIZE=1000							HISTSIZE=1000
+SSH_CLIENT=128.112.165.245 59660 22				SSH_CLIENT=128.112.165.245 59660 22
+SELINUX_USE_CURRENT_RANGE=					SELINUX_USE_CURRENT_RANGE=
+SSH_TTY=/dev/pts/15						SSH_TTY=/dev/pts/15
+LC_ALL=C							LC_ALL=C
+QT_GRAPHICSSYSTEM_CHECKED=1					QT_GRAPHICSSYSTEM_CHECKED=1
+USER=jingranz							USER=jingranz
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5	LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5
+UNAME_HWCLASS=x86_64						UNAME_HWCLASS=x86_64
+LIBGL_ALWAYS_INDIRECT=true					LIBGL_ALWAYS_INDIRECT=true
+MAIL=/var/spool/mail/jingranz					MAIL=/var/spool/mail/jingranz
+PATH=/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/	PATH=/u/cos217/bin:/u/cos217/bin/i686:/u/cos217/bin/critter2/
+CPUTYPE=x86_64							CPUTYPE=x86_64
+_=./__temp/pgm							_=./__temp/pgm
+PWD=/u/jingranz/ishProj						PWD=/u/jingranz/ishProj
+GOARCH=amd64							GOARCH=amd64
+LANG=en_US.UTF-8						LANG=en_US.UTF-8
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/u	MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/u
+LOADEDMODULES=							LOADEDMODULES=
+SELINUX_LEVEL_REQUESTED=					SELINUX_LEVEL_REQUESTED=
+UNAME_NODE=courselab02.cs.princeton.edu				UNAME_NODE=courselab02.cs.princeton.edu
+HISTCONTROL=ignoredups						HISTCONTROL=ignoredups
+SHLVL=3								SHLVL=3
+HOME=/u/jingranz						HOME=/u/jingranz
+UNAME_RELEASE=3.10.0-514.2.2.el7.x86_64				UNAME_RELEASE=3.10.0-514.2.2.el7.x86_64
+GOROOT=/usr/lib/golang						GOROOT=/usr/lib/golang
+UNAME_ARCH=x86_64						UNAME_ARCH=x86_64
+GOOS=linux							GOOS=linux
+LOGNAME=jingranz						LOGNAME=jingranz
+CVS_RSH=ssh							CVS_RSH=ssh
+SSH_CONNECTION=128.112.165.245 59660 128.112.155.151 22		SSH_CONNECTION=128.112.165.245 59660 128.112.155.151 22
+MODULESHOME=/usr/share/Modules					MODULESHOME=/usr/share/Modules
+LESSOPEN=||/usr/bin/lesspipe.sh %s				LESSOPEN=||/usr/bin/lesspipe.sh %s
+XDG_RUNTIME_DIR=/run/user/120599				XDG_RUNTIME_DIR=/run/user/120599
+HISTTIMEFORMAT=%F %T 						HISTTIMEFORMAT=%F %T 
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`	BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}								}
+% printenv XXX							% printenv XXX
+% 								% 
+% echo "*** REDIRECTION"					% echo "*** REDIRECTION"
+*** REDIRECTION							*** REDIRECTION
+% pwd > junk							% pwd > junk
+							      >	/u/jingranz/ishProj
+% cat junk							% cat junk
+/u/jingranz						      |	cat: junk: No such file or directory
+% cat < junk							% cat < junk
+/u/jingranz						      <
+% cat < junk > junk2						% cat < junk > junk2
+% cat junk2							% cat junk2
+/u/jingranz						      |	cat: junk2: No such file or directory
+% cat > junk3 < junk2						% cat > junk3 < junk2
+% cat junk3							% cat junk3
+/u/jingranz						      |	cat: junk3: No such file or directory
+% cat junk2 > junk4 junk3					% cat junk2 > junk4 junk3
+							      >	cat: junk2: No such file or directory
+							      >	cat: junk3: No such file or directory
+% cat junk4							% cat junk4
+/u/jingranz						      |	cat: junk4: No such file or directory
+/u/jingranz						      <
+% rm junk junk2 junk3 junk4					% rm junk junk2 junk3 junk4
+							      >	rm: cannot remove 'junk': No such file or directory
+							      >	rm: cannot remove 'junk2': No such file or directory
+							      >	rm: cannot remove 'junk3': No such file or directory
+							      >	rm: cannot remove 'junk4': No such file or directory
+% 								% 
+% echo "*** ERRONEOUS COMMANDS"					% echo "*** ERRONEOUS COMMANDS"
+*** ERRONEOUS COMMANDS						*** ERRONEOUS COMMANDS
+% echo "one							% echo "one
+./__temp/pgm: unmatched quote					./__temp/pgm: unmatched quote
+% cd dir1 dir2							% cd dir1 dir2
+./__temp/pgm: too many arguments			      |	/usr/bin/cd: line 2: cd: dir1: No such file or directory
+% setenv							% setenv
+./__temp/pgm: missing variable				      |	execvp failed.
+% unsetenv							% unsetenv
+./__temp/pgm: missing variable				      |	execvp failed.
+% echo one >							% echo one >
+./__temp/pgm: standard output redirection without file name	./__temp/pgm: standard output redirection without file name
+% echo one > junk1 > junk2					% echo one > junk1 > junk2
+./__temp/pgm: multiple redirection of standard output		./__temp/pgm: multiple redirection of standard output
+% cat < xxxxxxxx						% cat < xxxxxxxx
+./__temp/pgm: No such file or directory			      <
+% xxxxxxxx							% xxxxxxxx
+./__temp/pgm: No such file or directory			      |	execvp failed.
+% 								% 
+% echo "*** UNUSUAL COMMANDS"					% echo "*** UNUSUAL COMMANDS"
+*** UNUSUAL COMMANDS						*** UNUSUAL COMMANDS
+% echo one ">" junk						% echo one ">" junk
+one > junk							one > junk
+% echo one > ">"						% echo one > ">"
+% cat ">"						      <
+one								one
+							      >	% cat ">"
+							      >	cat: >: No such file or directory
+% rm ">"							% rm ">"
+% 							      |	rm: cannot remove '>': No such file or directory
+							      >	% 
+================================================================
+Running sampleish and ish with commands_lex
+================================================================
+
+% echo								% echo
+
+% echo 123							% echo 123
+123								123
+% echo one123							% echo one123
+one123								one123
+% echo 123one							% echo 123one
+123one								123one
+% echo @#$%^&*()						% echo @#$%^&*()
+@#$%^&*()							@#$%^&*()
+% echo '							% echo '
+'								'
+% echo one   two						% echo one   two
+one two								one two
+%     echo one two						%     echo one two
+one two								one two
+%     								%     
+% echo one >							% echo one >
+./__temp/pgm: standard output redirection without file name	./__temp/pgm: standard output redirection without file name
+% echo one>							% echo one>
+./__temp/pgm: standard output redirection without file name	./__temp/pgm: standard output redirection without file name
+% echo>one							% echo>one
+							      >
+% rm one							% rm one
+							      >	rm: cannot remove 'one': No such file or directory
+% 								% 
+% echo "one"							% echo "one"
+one								one
+% echo ">"							% echo ">"
+>								>
+% echo "one   two"						% echo "one   two"
+one   two							one   two
+% echo one"two"							% echo one"two"
+onetwo								onetwo
+% echo "one"two							% echo "one"two
+onetwo								onetwo
+% echo "one							% echo "one
+./__temp/pgm: unmatched quote					./__temp/pgm: unmatched quote
+% one"two							% one"two
+./__temp/pgm: unmatched quote					./__temp/pgm: unmatched quote
+% 							      /	% 
+
+================================================================
+Running sampleish and ish with commands_syn
+================================================================
+
+% pwd								% pwd
+/u/jingranz/ishProj						/u/jingranz/ishProj
+% pwd > file1							% pwd > file1
+% cat file1						      <
+/u/jingranz/ishProj						/u/jingranz/ishProj
+							      >	% cat file1
+							      >	cat: file1: No such file or directory
+% cat < file1							% cat < file1
+/u/jingranz/ishProj					      <
+% cat file1 > file2						% cat file1 > file2
+							      >	cat: file1: No such file or directory
+% cat < file1 > file2						% cat < file1 > file2
+% cat > file1 < file2						% cat > file1 < file2
+% cat > file2 file1						% cat > file2 file1
+							      >	cat: file1: No such file or directory
+% < file1							% < file1
+./__temp/pgm: missing command name				./__temp/pgm: missing command name
+% cat file1 <							% cat file1 <
+./__temp/pgm: standard input redirection without file name	./__temp/pgm: standard input redirection without file name
+% cat file1 >							% cat file1 >
+./__temp/pgm: standard output redirection without file name	./__temp/pgm: standard output redirection without file name
+% cat file1 > file2 > file3					% cat file1 > file2 > file3
+./__temp/pgm: multiple redirection of standard output		./__temp/pgm: multiple redirection of standard output
+% cat < file1 < file2						% cat < file1 < file2
+./__temp/pgm: multiple redirection of standard input		./__temp/pgm: multiple redirection of standard input
+% rm file1 file2						% rm file1 file2
+% 							      |	rm: cannot remove 'file1': No such file or directory
+							      >	rm: cannot remove 'file2': No such file or directory
+							      >	% 

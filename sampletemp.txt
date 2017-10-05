@@ -1,0 +1,60 @@
+% echo
+Token: echo (ordinary)
+% echo 123
+Token: echo (ordinary)
+Token: 123 (ordinary)
+% echo one123
+Token: echo (ordinary)
+Token: one123 (ordinary)
+% echo 123one
+Token: echo (ordinary)
+Token: 123one (ordinary)
+% echo @#$%^&*()
+Token: echo (ordinary)
+Token: @#$%^&*() (ordinary)
+% echo '
+Token: echo (ordinary)
+Token: ' (ordinary)
+% echo one   two
+Token: echo (ordinary)
+Token: one (ordinary)
+Token: two (ordinary)
+%     echo one two
+Token: echo (ordinary)
+Token: one (ordinary)
+Token: two (ordinary)
+%     
+% echo one >
+Token: echo (ordinary)
+Token: one (ordinary)
+Token: > (special)
+% echo one>
+Token: echo (ordinary)
+Token: one (ordinary)
+Token: > (special)
+% echo>one
+Token: echo (ordinary)
+Token: > (special)
+Token: one (ordinary)
+% rm one
+Token: rm (ordinary)
+Token: one (ordinary)
+% 
+% echo "one"
+Token: echo (ordinary)
+Token: one (ordinary)
+% echo ">"
+Token: echo (ordinary)
+Token: > (ordinary)
+% echo "one   two"
+Token: echo (ordinary)
+Token: one   two (ordinary)
+% echo one"two"
+Token: echo (ordinary)
+Token: onetwo (ordinary)
+% echo "one"two
+Token: echo (ordinary)
+Token: onetwo (ordinary)
+% echo "one
+% one"two
+% 
