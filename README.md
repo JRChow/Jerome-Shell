@@ -1,7 +1,10 @@
 # Jerome Shell
 A Linux shell that I built *from scratch*! 
+
 It consists of a lexical analyzer and a syntactic analyzer.
+
 The programs are *super modular*, both at function level and source code level!
+
 `JeromeShell` can handle external and built-in commands, input/output redirection, signals, and errors.
 
 
